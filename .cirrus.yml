@@ -12,5 +12,6 @@ task:
   script:
     ./configure || $(cat config.log)
     gmake -j$(sysctl -n hw.npcu)
+    # run some tests ?? 
     
     
