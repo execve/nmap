@@ -1,4 +1,5 @@
 Nmap [![Build Status](https://travis-ci.org/nmap/nmap.svg?branch=master)](https://travis-ci.org/nmap/nmap)
+Cirrus-CI [![Build Status](https://api.cirrus-ci.com/github/execve/nmap.svg))](https://api.cirrus-ci.com/github/execve/nmap.svg))
 ====
 
 Nmap is released under a custom license, which is based on (but not compatible
