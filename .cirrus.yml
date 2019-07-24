@@ -11,6 +11,7 @@ task:
   script:
     - ./configure || $(cat config.log)
     - gmake -j$(sysctl -n hw.npcu)
+    - ./nmap -A localhost
     # run some tests ?? 
     # we really should run some tests!
     
