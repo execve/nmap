@@ -9,8 +9,8 @@ task:
     - pkg upgrade -y
     - pkg install -y gmake 
   script:
-    ./configure || $(cat config.log)
-    gmake -j$(sysctl -n hw.npcu)
+    - ./configure || $(cat config.log)
+    - gmake -j$(sysctl -n hw.npcu)
     # run some tests ?? 
     # we really should run some tests!
     
