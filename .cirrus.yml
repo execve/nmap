@@ -7,7 +7,7 @@ task:
   install_script:
     - sed -i.bak -e 's,pkg+http://pkg.FreeBSD.org/\${ABI}/quarterly,pkg+http://pkg.FreeBSD.org/\${ABI}/latest,' /etc/pkg/FreeBSD.conf
     - pkg upgrade -y
-    - pkg install -y gmake 
+    - pkg install -y gmake autoconf
   script:
     - ./configure || $(cat config.log)
     - gmake -j$(sysctl -n hw.npcu)
